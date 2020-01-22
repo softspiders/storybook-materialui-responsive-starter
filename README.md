@@ -1,3 +1,3 @@
-# react-materialui-responsive-starter
+# storybook-materialui-responsive-starter
 
 UNDER DEVELOPMENT
