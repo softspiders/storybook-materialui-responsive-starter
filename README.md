@@ -8,8 +8,7 @@ Minimalistic React module with Storybook and Material UI responsive layout
 
 - react
 - storybook
-- material-ui
-- material-table
+- materialui
 
 ---
 
@@ -21,9 +20,8 @@ Minimalistic React module with Storybook and Material UI responsive layout
 
 ## Requirements
 
-* [Storybook](https://storybook.js.org/docs/guides/quick-start-guide/)
-* [material-ui](https://material-ui.com/)
-* [material-table](https://material-table.com/)
+- [*Node*](https://nodejs.org/en/download/package-manager/)
+
 ---
 
 ## Istallation

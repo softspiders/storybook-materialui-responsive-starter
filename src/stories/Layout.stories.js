@@ -1,6 +1,7 @@
 import React from 'react';
 import { forwardRef } from 'react';
 import PropTypes from 'prop-types';
+import { action as act } from '@storybook/addon-actions';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
@@ -88,7 +89,7 @@ export function ResponsiveDrawer(props) {
       <Divider />
       <List>
         {['Item 1', 'Item 2', 'Item 3', 'Item 4'].map((text, index) => (
-          <ListItem button key={text}>
+          <ListItem button key={text} onClick={act(text+' clicked')}>
             <ListItemIcon>{icons[index]}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
@@ -97,7 +98,7 @@ export function ResponsiveDrawer(props) {
       <Divider />
       <List>
         {['Item 5', 'Item 6', 'Item 7'].map((text, index) => (
-          <ListItem button key={text}>
+          <ListItem button key={text} onClick={act(text+' clicked')}>
             <ListItemIcon>{icons[index+4]}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
@@ -367,7 +368,7 @@ export function MaterialTableDemo() {
       },
     ],
   });
-
+    
   return (
     <MaterialTable
       title="Editable Example"
@@ -405,7 +406,7 @@ export function MaterialTableDemo() {
               resolve();
               setState(prevState => {
                 const data = [...prevState.data];
-                data.splice(data.indexOf(oldData), 1);
+                data.splice(data.indexOf(oldData), 1);    
                 return { ...prevState, data };
               });
             }, 600);
