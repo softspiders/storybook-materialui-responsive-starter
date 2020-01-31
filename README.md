@@ -6,11 +6,11 @@ Minimalistic React module with Storybook and Material UI responsive layout
 
 ## Feature tags
 
+- materialui
 - react
 - responsive
 - starter
 - storybook
-- materialui
 
 ---
 
