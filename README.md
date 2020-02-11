@@ -11,6 +11,7 @@ Minimalistic React module with Storybook and Material UI responsive layout
 - responsive
 - starter
 - storybook
+- template
 
 ---
 
